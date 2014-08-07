@@ -1,0 +1,65 @@
+%% Titelseite
+%% Vorlage $Id: titelseite.tex 61 2012-05-03 13:58:03Z bless $
+
+\def\usesf{}
+\let\usesf\sffamily % diese Zeile auskommentieren für normalen TeX Font
+
+\newsavebox{\Erstgutachter}
+\savebox{\Erstgutachter}{\usesf Prof. Dr. rer. pol.~Ingolf \textsc{Weise}}
+\newsavebox{\Zweitgutachter}
+\savebox{\Zweitgutachter}{\usesf Dipl.-Wi.-Math.~Dirk \textsc{Espinoza}}
+\newsavebox{\Studiengang}
+\savebox{\Studiengang}{\usesf Wirtschaftsinformatik (B.Sc.)}
+
+\begin{titlepage}
+\setlength{\unitlength}{1pt}
+\begin{picture}(0,0)(85,770)
+\includegraphics[width=\paperwidth]{logos/HFTL_Deckblatt}
+\end{picture}
+
+\thispagestyle{empty}
+
+%\begin{titlepage}
+%%\let\footnotesize\small \let\footnoterule\relax
+\begin{center}
+\hbox{}
+\vfill
+{\usesf
+{\LARGE\bfseries 
+              Exposé zur Bachelorarbeit \par}
+\vskip 1.8cm
+{\Large\bfseries
+Kostencontrolling bei T-Systems \\
+am Kundenbeispiel \\}
+von\\[2mm]
+\vskip 1cm
+
+{\large\bfseries Florian Weber\\}
+Moosburger Str. 19a\\
+85276 Pfaffenhofen\\
+florian.weber@hft-leipzig.de\\
+\vskip 1.2cm
+an der Hochschule für Telekommunikation Leipzig\\
+der Fakultät für Informatik\
+%Universität Karlsruhe (TH)\\[2ex]
+\vskip 3cm
+\begin{tabular}{p{5.5cm}l}
+Betreuender Professor: & \usebox{\Erstgutachter} \\
+Zweitprüfer: & \usebox{\Zweitgutachter}\\
+Studiengang: & \usebox{\Studiengang}\\
+\vskip 3cm
+Version: 1.0\\
+Stand: 27.07.2014
+\end{tabular}
+\vskip 5cm
+}
+\end{center}
+\vfill
+\end{titlepage}
+%% Titelseite Ende
+
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "thesis"
+%%% End: 
